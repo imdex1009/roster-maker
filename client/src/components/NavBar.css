@@ -1,9 +1,32 @@
 nav {
-  display: grid;
+  padding: 0 0 0 1rem;
   background-color: black;
   color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navLogo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 1rem 0 0;
+  color: white;
+}
+
+.navigation {
+  display: grid;
   font-size: 1.5rem;
   height: 5vh;
-  grid-template-columns: repeat(3, 300px);
-  justify-items: center;
+  grid-template-columns: repeat(4, 10rem);
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+a > span {
+  color: white;
 }
